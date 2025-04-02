@@ -1,0 +1,38 @@
+{
+  "name": "web1-zh1-2025",
+  "version": "1.0.0",
+  "description": "## Előkészítés (Github 10%)",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "test": "playwright test",
+    "test:html": "playwright test --grep @html",
+    "test:css": "playwright test --grep @css",
+    "test:bootstrap": "playwright test --grep @bootstrap",
+    "test:full": "start-server-and-test start http://localhost:3000 test",
+    "test:full:html": "start-server-and-test start http://localhost:3000 test:html",
+    "test:full:css": "start-server-and-test start http://localhost:3000 test:css",
+    "test:full:bootstrap": "start-server-and-test start http://localhost:3000 test:bootstrap",
+    "postinstall": "npx playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.0",
+    "http-server": "^14.1.1",
+    "start-server-and-test": "^1.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GAMF-INFO-CSJ/web1-zh1-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GAMF-INFO-CSJ/web1-zh1-2025/issues"
+  },
+  "homepage": "https://github.com/GAMF-INFO-CSJ/web1-zh1-2025#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "font-awesome": "^4.7.0"
+  }
+}
